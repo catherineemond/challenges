@@ -12,6 +12,24 @@
     - use their solutions to arrive at the solution of bigger problems
     - usually done in tabular form
 
+**Tabulation** uses a bottom up approach.
+**Memoization** uses a top down approach.
+
+> Dynamic Programming is mainly an optimization over plain recursion. [...] The idea is simply to store the results of subproblems, so that we do not have to recompute them when needed later.
+
+Geeks for Geeks (https://www.geeksforgeeks.org/dynamic-programming/)
+
+> [Dynamic Programing] refers to simplifying a complicated problem by breaking it down into simpler sub-problems in a recursive manner.
+
+Wikipedia (https://en.wikipedia.org/wiki/Dynamic_programming)
+
+# Practical problem solving:
+
+If the problem can be solved with Dynamic Programming , we have to go through these 3 steps:
+
+- define the sub-problems
+- find the overlapping sub-problems
+- solve the base cases
 
 # Examples:
 

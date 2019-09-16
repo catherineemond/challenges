@@ -1,0 +1,22 @@
+- big O
+- recursion
+- sorting
+  - bubble sort
+  - insertion sort
+  - merge sort
+  - quick sort
+- data structures
+  - array
+  - hash
+  - set
+  - stack
+  - queue
+  - linked list
+  - binary search tree and other trees
+  - graphs
+- tree traversal
+  - depth-first traversal
+  - breadth first traversal
+- pathfinding
+- maze generation
+- dynamic programming

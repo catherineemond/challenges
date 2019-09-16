@@ -1,0 +1,44 @@
+/*
+- 4 floors
+- an elevator
+  - it can move between the 4 floors
+  - it can carry at most me + 2 RTGs or microchips in any combination
+  - will only function if it contains at least one RTG or microchip
+  - always stop on each floor
+    - in that time the items in the elevator and the items on the given floor can irradiate one another
+- RTG (or 'generators')
+  - dangerously radioactive
+  - paired with microchips
+  - can power an associated microchip
+  - will be dangerous to other microchips
+- microchips
+  - don't have normal radiation shielding (i.e. can be damaged by the radiation)
+  - BUT: they generate a shield when powered
+  - they can only be powered by their corresponding RTG
+- rules:
+  - if a chip is ever left in the same area as another RTG, and it's not connected to its own RTG, the chip will be fried.
+    - keep chips connected to their corresponding RTG when they're in the same room
+    - keep chips away from other RTGs otherwise
+  - me + the elevator start on the first floor
+- goal:
+  - bring all the RTGs and microchips to the 4th floor
+- input:
+  - locations of each component of interest
+- output:
+  - the minimum number of steps required
+    - each elevator stop counts as one step
+- approaches:
+  - use oo
+  - model the problem
+  - breadth-first-search?
+  - A*
+  - prune already seen states
+- optimizations:
+  - once a floor below is empty, no need to return to it
+  - skip over similar structures
+------------------------------------------------------------------------------
+objects:
+  - microchips
+  - generators
+  - floor
+  - elevator
